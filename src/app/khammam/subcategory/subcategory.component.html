@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row shadow-sm my-3 border rounded" *ngFor="let category of subcategory">
+    <div class="col-md-3 col-xs-3 px-0">
+      <img src="{{ category.image_link }}" class="img-fluid" alt="{{ category.name }}">
+    </div>
+    <div class="col-md-9 col-xs-9">
+        <h2>{{ category.name }}</h2>
+        <h4>{{ category.landmark }}</h4>
+        <p><b>Address: </b>{{ category.house_number }} {{ category.street }} {{ category.landmark }} {{ category.district}} {{ category.state }}</p>
+        <p>{{ category.business_mobile }}</p>
+        <a class="btn btn-primary" [routerLink]="['/product', category.id]">Read more</a>
+    </div>
+  </div>
+</div>

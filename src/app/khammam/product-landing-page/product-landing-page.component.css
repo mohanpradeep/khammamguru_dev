@@ -1,0 +1,19 @@
+.demo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  color: #fff;
+  background-color: #00000057
+}
+.img-fluid.w-100{
+  max-height: 83vh
+}
+.breadcrumb.mb-0{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #e9ecefde;
+  top: 20px
+}
