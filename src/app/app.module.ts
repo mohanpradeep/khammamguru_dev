@@ -16,6 +16,7 @@ import { ProductLandingPageService } from './khammam/service/product-landing-pag
 import { CategoryService } from './khammam/service/category.service';
 import { InformationComponent } from './khammam/information/information.component';
 import { InformationService } from './khammam/service/information.service';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { InformationService } from './khammam/service/information.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFontAwesomeModule
   ],
   providers: [
     InformationService,

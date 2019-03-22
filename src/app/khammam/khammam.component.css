@@ -1,0 +1,20 @@
+.gradient {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+}
+.gradient::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  mix-blend-mode: screen;
+  background: -webkit-radial-gradient(circle,#dd3b36,#4292d0);
+  background: radial-gradient(circle,#dd3b36,#4292d0);
+  pointer-events: none;
+}

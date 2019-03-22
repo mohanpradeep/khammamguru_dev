@@ -4,11 +4,22 @@
       <img src="{{ category.image_link }}" class="img-fluid" alt="{{ category.name }}">
     </div>
     <div class="col-md-9 col-xs-9">
-        <h2>{{ category.name }}</h2>
-        <h4>{{ category.landmark }}</h4>
-        <p><b>Address: </b>{{ category.house_number }} {{ category.street }} {{ category.landmark }} {{ category.district}} {{ category.state }}</p>
-        <p>{{ category.business_mobile }}</p>
-        <a class="btn btn-primary" [routerLink]="['/product', category.id]">Read more</a>
+        <h1 class="mt-2 title">{{ category.name }}</h1>
+        <h4 class="mb-3">{{ category.landmark }}</h4>
+        <div class="media">
+          <fa name="map-marker"></fa>
+          <div class="media-body">
+            <p class="mb-1">&nbsp;{{ category.house_number }} {{ category.street }} {{ category.landmark }} {{ category.district}} {{ category.state }}</p>
+          </div>
+        </div>
+        <div class="media">
+          <fa name="phone"></fa>
+          <div class="media-body">
+            <p>&nbsp;{{ category.business_mobile }}</p>
+          </div>
+        </div>
+        <a class="btn btn-outline-success float-right" [routerLink]="['/product', category.id]"><fa name="eye"></fa>&nbsp;Read more</a>
     </div>
   </div>
 </div>
+
